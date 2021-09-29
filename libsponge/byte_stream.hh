@@ -15,7 +15,7 @@ class ByteStream {
     size_t _capacity = 0;
     size_t _bytes_read = 0;
     size_t _bytes_write = 0;
-    size_t _input_end = false;
+    size_t _end_input = false;
     // Hint: This doesn't need to be a sophisticated data structure at
     // all, but if any of your tests are taking longer than a second,
     // that's a sign that you probably want to keep exploring

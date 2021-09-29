@@ -25,6 +25,7 @@ size_t ByteStream::write(const string &data) {
     for (size_t i = 0; i < write_size; i++) {
         _buffer.push_back(data[i]);
     }
+    _bytes_write += write_size;
     return write_size;
 }
 
@@ -52,9 +53,9 @@ std::string ByteStream::read(const size_t len) {
     return ret;
 }
 
-void ByteStream::end_input() { _input_end = true; }
+void ByteStream::end_input() { _end_input = true; }
 
-bool ByteStream::input_ended() const { return _input_end; }
+bool ByteStream::input_ended() const { return _end_input; }
 
 size_t ByteStream::buffer_size() const { return _buffer.size(); }
 
