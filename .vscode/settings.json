@@ -5,6 +5,11 @@
         "unordered_map": "cpp",
         "vector": "cpp",
         "initializer_list": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "sstream": "cpp",
+        "tuple": "cpp"
     }
 }
